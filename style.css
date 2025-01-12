@@ -1,161 +1,204 @@
-/* Stili generali */
+/* GENERALI */
 body {
-    font-family: sans-serif;
-    margin: 0;
-    line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f8f8;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 h1, h2, h3 {
-    font-weight: 600;
-    color: #228B22; /* Verde foresta */
+  font-weight: 500;
 }
 
-p{
-  color:#333
-}
-
-ul {
-    list-style: none;
-    padding: 0;
+h2 {
+    margin-top: 0;
 }
 
 a {
-    text-decoration: none;
-    color: #228B22;
+  text-decoration: none;
 }
 
-/* Header */
+/* HEADER */
 header {
-    background-color: #f4f4f4;
-    padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #4CAF50; /* Colore verde, modificabile */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  width: 150px; /* Modifica la dimensione a piacere */
+  height: auto;
+  margin-bottom: 10px;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin: 0;
+  margin: 0;
+  font-size: 2.5rem;
 }
 
-nav ul {
-    display: flex;
-    justify-content: flex-end;
+header p {
+  margin: 5px 0 0;
+  font-size: 1.1rem;
 }
 
-nav li {
-    margin-left: 20px;
-}
-
-/* Sezione Hero */
-#hero {
-    background-image: url('images/hero-background.jpg'); /* Sostituisci con l'immagine che preferisci */
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    padding: 100px 0;
-    text-align: center;
-}
-
-#hero h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-/* Sezione Mission */
-#mission {
-    padding: 80px 0;
-}
-
-#mission ul {
-    margin-top: 20px;
-}
-
-#mission li {
-    margin-bottom: 10px;
-}
-
-/* Sezione Actions */
-#actions {
-    background-color: #f4f4f4;
-    padding: 80px 0;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.card {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.card h3 {
-    padding: 20px;
-    margin: 0;
-}
-
-.card p {
-    padding: 0 20px 20px;
-    color: #666;
-}
-
-/* Sezione Impact */
-#impact {
-    padding: 80px 0;
-    background-color: #228B22;
-    color: #fff
-}
-
-.impact-item {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.number {
-    font-size: 3rem;
-    font-weight: 600;
-    display: block;
-    margin-bottom: 10px;
-}
-
-/* Sezione Contact */
-#contact {
-    background-color: #f4f4f4;
-    padding: 80px 0;
+/* SEZIONE INTRO */
+#intro {
+  padding: 40px 0;
+  text-align: center;
 }
 
 .button {
-    background-color: #228B22;
-    color: #fff;
-    padding: 15px 30px;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background-color 0.3s ease;
+  display: inline-block;
+  background-color: #4CAF50; /* Colore verde, modificabile */
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Aggiunge ombra */
 }
 
 .button:hover {
-    background-color: #196019; /* Verde Foresta più scuro */
+  background-color: #367c39; /* Verde più scuro al passaggio del mouse */
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+/* SEZIONE REPORT */
+#reports {
+  padding: 40px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.tab {
+  background-color: #eee;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+    background-color: #ddd;
+}
+
+.tab.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     text-align: center;
+    flex: 1 0 calc(33% - 40px);
+    max-width: 350px;
+}
+
+.card i {
+    font-size: 48px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* SEZIONE APPROFONDIMENTI */
+#more {
+  padding: 40px 0;
+}
+
+/* FOOTER */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* EFFETTO RIPPLE */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform 0.5s, opacity 1s;
+}
+
+.ripple:active:after {
+  transform: scale(0, 0);
+  opacity: 0.3;
+  transition: 0s;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    flex: 1 0 100%;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+  .tab {
+    flex: 1 0 30%;
+  }
 }
