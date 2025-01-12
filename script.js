@@ -1,19 +1,29 @@
-const numbers = document.querySelectorAll('.number');
+const tabs = document.querySelectorAll('.tab');
+const cards = document.querySelectorAll('.card');
 
-numbers.forEach(number => {
-    const target = +number.getAttribute('data-target');
-    const duration = 2000; // Durata dell'animazione in millisecondi
-    const stepTime = 20; // Tempo tra ogni incremento
-    let current = 0;
-    const increment = target / (duration / stepTime);
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    // Rimuove la classe 'active' da tutti i tab
+    tabs.forEach(t => t.classList.remove('active'));
+    // Aggiunge la classe 'active' al tab cliccato
+    tab.classList.add('active');
 
-    const timer = setInterval(() => {
-        current += increment;
-        number.textContent = Math.floor(current);
+    const year = tab.dataset.year;
 
-        if (current >= target) {
-            clearInterval(timer);
-            number.textContent = target;
-        }
-    }, stepTime);
+    cards.forEach(card => {
+      if (card.dataset.year === year) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+
+// Assicurati che la prima scheda sia attiva all'avvio e che le schede corrette siano visualizzate
+document.addEventListener('DOMContentLoaded', () => {
+  const firstTab = document.querySelector('.tab');
+  if (firstTab) {
+    firstTab.click();
+  }
 });
