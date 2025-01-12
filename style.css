@@ -1,0 +1,161 @@
+/* Stili generali */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    color: #228B22; /* Verde foresta */
+}
+
+p{
+  color:#333
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #228B22;
+}
+
+/* Header */
+header {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+/* Sezione Hero */
+#hero {
+    background-image: url('images/hero-background.jpg'); /* Sostituisci con l'immagine che preferisci */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Sezione Mission */
+#mission {
+    padding: 80px 0;
+}
+
+#mission ul {
+    margin-top: 20px;
+}
+
+#mission li {
+    margin-bottom: 10px;
+}
+
+/* Sezione Actions */
+#actions {
+    background-color: #f4f4f4;
+    padding: 80px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 20px;
+    margin: 0;
+}
+
+.card p {
+    padding: 0 20px 20px;
+    color: #666;
+}
+
+/* Sezione Impact */
+#impact {
+    padding: 80px 0;
+    background-color: #228B22;
+    color: #fff
+}
+
+.impact-item {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.number {
+    font-size: 3rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Sezione Contact */
+#contact {
+    background-color: #f4f4f4;
+    padding: 80px 0;
+}
+
+.button {
+    background-color: #228B22;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #196019; /* Verde Foresta più scuro */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}

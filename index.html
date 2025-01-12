@@ -3,37 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sostenibilità Aziendale</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Il nostro impegno per la sostenibilità</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Sostenibilità Aziendale</h1>
-        <p>Promuoviamo la sostenibilità per un futuro migliore.</p>
+        <div class="container">
+            <h1>Il nostro impegno per la sostenibilità</h1>
+            <nav>
+                <ul>
+                    <li><a href="#mission">La nostra missione</a></li>
+                    <li><a href="#actions">Le nostre azioni</a></li>
+                    <li><a href="#impact">Il nostro impatto</a></li>
+                    <li><a href="#contact">Contattaci</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section class="hero">
-            <img src="Screenshot 2024-12-10 234023.png" alt="Immagine Sostenibilità">
-            <div class="hero-text">
-                <h2>La sostenibilità è il nostro futuro</h2>
-                <p>
-                    Scopri come le aziende stanno adottando strategie per ridurre l'impatto ambientale
-                    e migliorare la loro impronta ecologica.
-                </p>
+        <section id="hero">
+            <div class="container">
+                <h2>Costruire un futuro migliore, insieme</h2>
+                <p>Crediamo in un futuro sostenibile e ci impegniamo a fare la nostra parte per proteggere il pianeta.</p>
             </div>
         </section>
-        <section class="charts">
-            <h2>Andamento della sostenibilità</h2>
-            <div class="chart-placeholder">
-                <p>[Qui può essere inserito un grafico in futuro]</p>
+
+        <section id="mission">
+            <div class="container">
+                <h2>La nostra missione</h2>
+                <p>La nostra missione è ridurre il nostro impatto ambientale, promuovere la responsabilità sociale e ispirare gli altri a fare lo stesso. Ci impegniamo a:</p>
+                <ul>
+                    <li>Ridurre le nostre emissioni di gas serra</li>
+                    <li>Conservare l'acqua e l'energia</li>
+                    <li>Minimizzare i rifiuti e promuovere il riciclaggio</li>
+                    <li>Utilizzare materiali e prodotti sostenibili</li>
+                    <li>Supportare le comunità locali</li>
+                </ul>
             </div>
         </section>
-        <section class="navigation">
-            <a href="search.html" class="btn">Cerca le aziende</a>
+
+        <section id="actions">
+            <div class="container">
+                <h2>Le nostre azioni</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="images/energia-rinnovabile.jpg" alt="Energia Rinnovabile">
+                        <h3>Energia rinnovabile</h3>
+                        <p>Stiamo investendo in fonti di energia rinnovabile, come quella solare ed eolica, per alimentare le nostre operazioni.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/riduzione-rifiuti.jpg" alt="Riduzione Rifiuti">
+                        <h3>Riduzione dei rifiuti</h3>
+                        <p>Abbiamo implementato programmi completi di riciclaggio e compostaggio per ridurre al minimo i rifiuti inviati alle discariche.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/prodotti-sostenibili.jpg" alt="Prodotti Sostenibili">
+                        <h3>Prodotti sostenibili</h3>
+                        <p>Stiamo sviluppando prodotti ecologici realizzati con materiali sostenibili e progettati per la durata.</p>
+                    </div>
+                    <div class="card">
+                        <img src="images/coinvolgimento-comunita.jpg" alt="Coinvolgimento della comunità">
+                        <h3>Coinvolgimento della comunità</h3>
+                        <p>Collaboriamo con le comunità locali per supportare iniziative di sostenibilità e promuovere la consapevolezza ambientale.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="impact">
+            <div class="container">
+                <h2>Il nostro impatto</h2>
+                <div class="impact-item">
+                    <span class="number" data-target="50">0</span><span>%</span>
+                    <p>Riduzione delle emissioni di carbonio</p>
+                </div>
+                <div class="impact-item">
+                    <span class="number" data-target="30">0</span><span>%</span>
+                    <p>Riduzione del consumo di acqua</p>
+                </div>
+                <div class="impact-item">
+                    <span class="number" data-target="90">0</span><span>%</span>
+                    <p>Rifiuti deviati dalle discariche</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contattaci</h2>
+                <p>Ci piacerebbe sentire la tua opinione. Contattaci per saperne di più sul nostro lavoro di sostenibilità o per condividere le tue idee.</p>
+                <a href="mailto:sustainability@example.com" class="button">Contattaci</a>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 Sostenibilità Aziendale | Tutti i diritti riservati</p>
+        <div class="container">
+            <p>&copy; 2023 [Nome della tua azienda]. Tutti i diritti riservati.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
