@@ -3,107 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il nostro impegno per la sostenibilità</title>
+    <title>Report di Sostenibilità - [Nome Azienda]</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Il nostro impegno per la sostenibilità</h1>
-            <nav>
-                <ul>
-                    <li><a href="#mission">La nostra missione</a></li>
-                    <li><a href="#actions">Le nostre azioni</a></li>
-                    <li><a href="#impact">Il nostro impatto</a></li>
-                    <li><a href="#contact">Contattaci</a></li>
-                </ul>
-            </nav>
+            <img src="images/logo.png" alt="Logo [Nome Azienda]" class="logo">
+            <h1>Report di Sostenibilità</h1>
+            <p>Trasparenza, Responsabilità, Innovazione per un Futuro Sostenibile</p>
         </div>
     </header>
 
     <main>
-        <section id="hero">
+        <section id="intro">
             <div class="container">
-                <h2>Costruire un futuro migliore, insieme</h2>
-                <p>Crediamo in un futuro sostenibile e ci impegniamo a fare la nostra parte per proteggere il pianeta.</p>
+                <h2>Il Nostro Impegno per la Sostenibilità</h2>
+                <p>[Nome Azienda] è impegnata a operare in modo responsabile e sostenibile. I nostri report di sostenibilità offrono una panoramica completa delle nostre prestazioni ambientali, sociali ed economiche.</p>
+                <button class="button ripple">Scopri di più</button>
             </div>
         </section>
 
-        <section id="mission">
+        <section id="reports">
             <div class="container">
-                <h2>La nostra missione</h2>
-                <p>La nostra missione è ridurre il nostro impatto ambientale, promuovere la responsabilità sociale e ispirare gli altri a fare lo stesso. Ci impegniamo a:</p>
-                <ul>
-                    <li>Ridurre le nostre emissioni di gas serra</li>
-                    <li>Conservare l'acqua e l'energia</li>
-                    <li>Minimizzare i rifiuti e promuovere il riciclaggio</li>
-                    <li>Utilizzare materiali e prodotti sostenibili</li>
-                    <li>Supportare le comunità locali</li>
-                </ul>
-            </div>
-        </section>
+                <h2 class="section-title">Scarica i Report</h2>
+                <div class="tabs">
+                    <button class="tab active" data-year="2023">2023</button>
+                    <button class="tab" data-year="2022">2022</button>
+                    <button class="tab" data-year="2021">2021</button>
+                </div>
 
-        <section id="actions">
-            <div class="container">
-                <h2>Le nostre azioni</h2>
-                <div class="grid">
-                    <div class="card">
-                        <img src="images/energia-rinnovabile.jpg" alt="Energia Rinnovabile">
-                        <h3>Energia rinnovabile</h3>
-                        <p>Stiamo investendo in fonti di energia rinnovabile, come quella solare ed eolica, per alimentare le nostre operazioni.</p>
+                <div class="cards">
+                    <div class="card" data-year="2023">
+                        <i class="material-icons">picture_as_pdf</i>
+                        <h3>Report di Sostenibilità 2023</h3>
+                        <p>Il nostro report del 2023 illustra i progressi compiuti verso i nostri obiettivi di sostenibilità, con un focus su innovazione e responsabilità sociale.</p>
+                        <a href="path/al/report/2023.pdf" class="button ripple" download>Scarica PDF</a>
                     </div>
-                    <div class="card">
-                        <img src="images/riduzione-rifiuti.jpg" alt="Riduzione Rifiuti">
-                        <h3>Riduzione dei rifiuti</h3>
-                        <p>Abbiamo implementato programmi completi di riciclaggio e compostaggio per ridurre al minimo i rifiuti inviati alle discariche.</p>
+                    <div class="card" data-year="2022">
+                        <i class="material-icons">picture_as_pdf</i>
+                        <h3>Report di Sostenibilità 2022</h3>
+                        <p>Il report del 2022 evidenzia i nostri traguardi nella riduzione dell'impatto ambientale e nel miglioramento del benessere delle comunità.</p>
+                        <a href="path/al/report/2022.pdf" class="button ripple" download>Scarica PDF</a>
                     </div>
-                    <div class="card">
-                        <img src="images/prodotti-sostenibili.jpg" alt="Prodotti Sostenibili">
-                        <h3>Prodotti sostenibili</h3>
-                        <p>Stiamo sviluppando prodotti ecologici realizzati con materiali sostenibili e progettati per la durata.</p>
-                    </div>
-                    <div class="card">
-                        <img src="images/coinvolgimento-comunita.jpg" alt="Coinvolgimento della comunità">
-                        <h3>Coinvolgimento della comunità</h3>
-                        <p>Collaboriamo con le comunità locali per supportare iniziative di sostenibilità e promuovere la consapevolezza ambientale.</p>
+                    <div class="card" data-year="2021">
+                        <i class="material-icons">picture_as_pdf</i>
+                        <h3>Report di Sostenibilità 2021</h3>
+                        <p>Nel 2021, abbiamo consolidato il nostro impegno per la sostenibilità, focalizzandoci sulla trasparenza e sull'etica aziendale.</p>
+                        <a href="path/al/report/2021.pdf" class="button ripple" download>Scarica PDF</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="impact">
+        <section id="more">
             <div class="container">
-                <h2>Il nostro impatto</h2>
-                <div class="impact-item">
-                    <span class="number" data-target="50">0</span><span>%</span>
-                    <p>Riduzione delle emissioni di carbonio</p>
+                <h2>Per saperne di più</h2>
+                <p>Scopri di più sull'impegno di [Nome Azienda] per la sostenibilità</p>
+                <div class="cards">
+                    <div class="card">
+                        <i class="material-icons">article</i>
+                        <h3>Articolo 1</h3>
+                        <p>Leggi l'articolo sul nostro ultimo progetto</p>
+                        <a href="#" class="button ripple" target="_blank">Leggi di più</a>
+                    </div>
+                    <div class="card">
+                        <i class="material-icons">article</i>
+                        <h3>Articolo 2</h3>
+                        <p>Un approfondimento sulle nostre iniziative verdi.</p>
+                        <a href="#" class="button ripple" target="_blank">Leggi di più</a>
+                    </div>
                 </div>
-                <div class="impact-item">
-                    <span class="number" data-target="30">0</span><span>%</span>
-                    <p>Riduzione del consumo di acqua</p>
-                </div>
-                <div class="impact-item">
-                    <span class="number" data-target="90">0</span><span>%</span>
-                    <p>Rifiuti deviati dalle discariche</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="container">
-                <h2>Contattaci</h2>
-                <p>Ci piacerebbe sentire la tua opinione. Contattaci per saperne di più sul nostro lavoro di sostenibilità o per condividere le tue idee.</p>
-                <a href="mailto:sustainability@example.com" class="button">Contattaci</a>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 [Nome della tua azienda]. Tutti i diritti riservati.</p>
+            <p>&copy; 2023 [Nome Azienda]. Tutti i diritti riservati.</p>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
