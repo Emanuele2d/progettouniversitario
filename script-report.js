@@ -1,4 +1,6 @@
-// Dati per i grafici 
+// Definizione dei dati per i grafici.
+// Questa sezione definisce gli oggetti che contengono i dati necessari per creare i diversi grafici. 
+// Ogni oggetto include informazioni come le etichette degli assi, i valori dei dati, i colori e lo stile dei grafici.
 const emissioniData = {
   labels: ['2022', '2023'],
   datasets: [
@@ -12,14 +14,14 @@ const emissioniData = {
     {
       label: 'Scope 2 (Location-based) (t CO2e)',
       data: [256.15, 260.70], // Dati Scope 2 Location-based
-      backgroundColor: 'rgba(54, 162, 235, 0.5)', // Colore diverso per Scope 2 Location-based
+      backgroundColor: 'rgba(54, 162, 235, 0.5)', // Colore diverso per Scope 2
       borderColor: 'rgba(54, 162, 235, 1)',
       borderWidth: 1,
     },
     {
       label: 'Scope 2 (Market-based) (t CO2e)',
       data: [1.64, 1.33], // Dati Scope 2 Market-based
-      backgroundColor: 'rgba(255, 206, 86, 0.5)', // Colore diverso per Scope 2 Market-based
+      backgroundColor: 'rgba(255, 206, 86, 0.5)', // Colore diverso per Scope 2
       borderColor: 'rgba(255, 206, 86, 1)',
       borderWidth: 1,
     },
@@ -71,105 +73,43 @@ const formazioneData = {
   }]
 };
 
-// Funzione per creare i grafici
-function createChart(chartId, type, data, options) {
+// Funzione per la creazione dei grafici.
+// Questa funzione crea un nuovo grafico Chart.js, impostando il tipo di grafico, i dati e le opzioni di visualizzazione, come l'animazione e la scala degli assi. 
+function createChart(chartId, type, data) {
   const canvas = document.getElementById(chartId);
-
-  // Imposta le dimensioni del canvas esplicitamente
   canvas.width = canvas.offsetWidth;
   canvas.height = canvas.offsetHeight;
 
-  const chart = new Chart(canvas, {
+  return new Chart(canvas, {
     type: type,
     data: data,
-    options: options
+    options: { 
+      animation: { 
+        duration: 3000 
+      },
+      scales: { 
+        y: { 
+          beginAtZero: type === 'bar' 
+        } 
+      } 
+    }
   });
-
-  return chart;
 }
 
-// Crea i grafici
-const emissioniChart = createChart('emissioniChart', 'bar', emissioniData, {
-  animation: {
-    duration: 200 // Disabilita l'animazione iniziale
-  },
-  scales: {
-    y: {
-      beginAtZero: true
-    }
-  }
-});
+// Creazione dei grafici.
+// In questa sezione, la funzione createChart viene chiamata per ogni grafico, passando l'ID del canvas, il tipo di grafico e i dati corrispondenti. 
+// Questo genera i grafici e li visualizza nella pagina.
+createChart('emissioniChart', 'bar', emissioniData);
+createChart('energiaChart', 'pie', energiaData);
+createChart('diversitaChart', 'pie', diversitaData);
+createChart('formazioneChart', 'bar', formazioneData);
 
-const energiaChart = createChart('energiaChart', 'pie', energiaData, {
-    animation: {
-        duration: 200
-    }
-});
-
-const diversitaChart = createChart('diversitaChart', 'pie', diversitaData, {
-    animation: {
-        duration: 200
-    }
-});
-
-const formazioneChart = createChart('formazioneChart', 'bar', formazioneData, {
-  animation: {
-    duration: 200
-  },
-  scales: {
-    y: {
-      beginAtZero: true
-    }
-  }
-});
-
-// Intersection Observer
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const chartId = entry.target.id;
-      let chartToAnimate;
-
-      // Trova il grafico corretto da animare
-      switch (chartId) {
-        case 'emissioniChart':
-          chartToAnimate = emissioniChart;
-          break;
-        case 'energiaChart':
-          chartToAnimate = energiaChart;
-          break;
-        case 'diversitaChart':
-          chartToAnimate = diversitaChart;
-          break;
-        case 'formazioneChart':
-          chartToAnimate = formazioneChart;
-          break;
-      }
-
-      // Anima il grafico se trovato
-      if (chartToAnimate) {
-        // Ripristina l'animazione
-        chartToAnimate.options.animation.duration = 1000; // Durata in ms
-        chartToAnimate.update();
-      }
-
-      observer.unobserve(entry.target);
-    }
-  });
-}, {
-  threshold: 0.5
-});
-
-// Questo codice JavaScript ottimizza il sito web monitorando la visibilità dei grafici e fornendo una funzionalità di menu a comparsa per una migliore navigazione su dispositivi mobili.
-observer.observe(document.getElementById('emissioniChart'));
-observer.observe(document.getElementById('energiaChart'));
-observer.observe(document.getElementById('diversitaChart'));
-observer.observe(document.getElementById('formazioneChart'));
-
+// Gestione del menu hamburger.
+// Questo codice gestisce l'interazione con il menu hamburger, come nel file script.js 
+// aggiungendo un event listener al pulsante che apre e chiude il menu al click
 const hamburgerBtn = document.getElementById('hamburger-btn');
 const mainNav = document.getElementById('main-nav');
 
 hamburgerBtn.addEventListener('click', () => {
   mainNav.classList.toggle('open');
 });
-
