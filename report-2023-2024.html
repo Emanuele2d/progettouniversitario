@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report di Sostenibilità 2023-2024 - Vodafone</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+   <header>
+  <div class="container">
+    <a href="index.html" class="logo-link">
+      <i class="material-icons">public</i>
+      <span> Sviluppo Project Work 3.1</span>
+    </a>
+    <nav id="main-nav">
+      <button id="hamburger-btn" aria-label="Apri menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        		<li><a href="report.html">Report</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main>
+        <section id="intro">
+            <div class="container">
+                <h2>Report di Sostenibilità 2023-2024: Un Impegno Concreto</h2>
+                <p>Il Bilancio di Sostenibilità 2023-2024 di Vodafone Italia, redatto secondo i GRI Sustainability Reporting Standards, illustra l'impegno dell'azienda verso la sostenibilità ambientale, sociale ed economica.</p>
+            </div>
+        </section>
+
+        <section id="pilastri">
+            <div class="container">
+                <h2>I Tre Pilastri della Strategia</h2>
+                <div class="data-grid">
+                    <div class="card">
+                        <i class="material-icons">public</i>
+                        <h3>Protecting the Planet</h3>
+                        <p>Vodafone Italia si impegna a raggiungere l'obiettivo "Net Zero" entro il 2040, riducendo le emissioni di gas serra e promuovendo l'economia circolare.</p>
+                    </div>
+                    <div class="card">
+                        <i class="material-icons">people</i>
+                        <h3>Empowering People</h3>
+                        <p>Vodafone Italia valorizza il capitale umano, promuovendo la diversità e l'inclusione, investendo nella formazione e offrendo un ambiente di lavoro sicuro e stimolante.</p>
+                    </div>
+                    <div class="card">
+                        <i class="material-icons">verified_user</i>
+                        <h3>Maintaining Trust</h3>
+                        <p>Vodafone Italia si impegna a mantenere elevati standard di governance aziendale, garantendo trasparenza, integrità, etica e tutelando la privacy dei propri clienti.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dati">
+            <div class="container">
+                <h2>Punti Salienti del Report</h2>
+
+                <div class="data-grid">
+                    <div class="data-item">
+                        <h3>Riduzione Emissioni CO2</h3>
+                        <p>Vodafone Italia ha ridotto notevolmente le sue emissioni di gas serra rispetto all'anno precedente.</p>
+                            <div class="chart-container">
+                            <canvas id="emissioniChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="data-item">
+                        <h3>Energia Rinnovabile</h3>
+                        <p>Il 100% dell'energia elettrica acquistata da Vodafone Italia proviene da fonti rinnovabili.</p>
+                        <div class="chart-container">
+                            <canvas id="energiaChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="data-item">
+                        <h3>Economia Circolare</h3>
+                        <p>L'azienda ha implementato diverse iniziative per promuovere l'economia circolare, tra cui il riciclo dei rifiuti e il riutilizzo dei prodotti.</p>
+                        <ul class="dot-list">
+                            <li>Riciclo del 95% dei rifiuti di rete</li>
+                            <li>Raccolta di oltre 50.000 dispositivi mobili usati per il riutilizzo o il riciclo</li>
+                            <li>Partnership con aziende specializzate nel ricondizionamento dei dispositivi</li>
+                        </ul>
+                    </div>
+
+                    <div class="data-item">
+                        <h3>Diversità e Inclusione</h3>
+                        <p>Il 49% dei dipendenti di Vodafone Italia è costituito da donne, e il 33% dei dirigenti sono donne.</p>
+                        <div class="chart-container">
+                            <canvas id="diversitaChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="data-item">
+                        <h3>Formazione</h3>
+                        <p>Vodafone Italia ha erogato oltre 450.000 ore di formazione ai propri dipendenti.</p>
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Anno</th>
+                                        <th>Ore di Formazione</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                   
+                                    <tr>
+                                        <td>2023</td>
+                                        <td>450.000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="formazioneChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="data-item">
+                        <h3>Sicurezza dei Dati</h3>
+                        <p>L'azienda ha implementato un sistema di cybersecurity per proteggere i dati dei propri clienti.</p>
+                        <ul class="dot-list">
+                            <li>Certificazione ISO 27001 per la sicurezza delle informazioni</li>
+                            <li>Investimenti continui in tecnologie di cybersecurity all'avanguardia</li>
+                            <li>Formazione specifica sulla sicurezza informatica per tutti i dipendenti</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusioni">
+            <div class="container">
+                <h2>Conclusioni</h2>
+                <p>Il Report di Sostenibilità 2023-2024 di Vodafone Italia dimostra l'impegno concreto dell'azienda verso la sostenibilità. Le iniziative implementate da Vodafone Italia contribuiscono alla creazione di un futuro più sostenibile e inclusivo, in linea con gli Obiettivi di Sviluppo Sostenibile delle Nazioni Unite. L'azienda si impegna a continuare a migliorare le proprie prestazioni ambientali, sociali ed economiche, mantenendo la fiducia dei propri stakeholder e contribuendo allo sviluppo del Paese.</p>
+            </div>
+        </section>
+		
+		<section id="download-report">
+  <div class="container">
+    <h2>Scarica il Report Completo</h2>
+    <p>Per approfondire i risultati e le iniziative di Vodafone Italia in ambito di sostenibilità, scarica il Report di Sostenibilità 2023-2024 completo in formato PDF.</p>
+    <a href="path/al/report/vodafone-report-sostenibilita-2023-2024.pdf" class="button ripple" download>Scarica il Report Completo (PDF)</a>
+  </div>
+</section>
+
+<section id="conclusioni">
+  <div class="container">
+    <h2>Conclusioni</h2>
+    <p>
+      Il Report di Sostenibilità 2023-2024 di Vodafone Italia dimostra
+      l'impegno concreto dell'azienda verso la sostenibilità. Le
+      iniziative implementate da Vodafone Italia contribuiscono alla
+      creazione di un futuro più sostenibile e inclusivo, in linea con
+      gli Obiettivi di Sviluppo Sostenibile delle Nazioni Unite.
+      L'azienda si impegna a continuare a migliorare le proprie
+      prestazioni ambientali, sociali ed economiche, mantenendo la
+      fiducia dei propri stakeholder e contribuendo allo sviluppo del
+      Paese.
+    </p>
+  </div>
+</section>
+		
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 - Questo sito è stato creato per soli scopi didattici nell'ambito di un project work accademico. 
+            Vodafone è un marchio registrato di Vodafone Group Plc. 
+            L'utilizzo del nome e del logo Vodafone in questo progetto non implica alcuna affiliazione, sponsorizzazione o approvazione da parte di Vodafone Group Plc. Tutti i diritti relativi al marchio Vodafone appartengono ai rispettivi proprietari. 
+            I report di sostenibilità citati sono di proprietà di Vodafone e sono utilizzati a scopo illustrativo e di analisi didattica. 
+            Questo sito non ha finalità commerciali e non intende violare alcun diritto di proprietà intellettuale.</p>
+        </div>
+    </footer>
+    <script src="script-report.js"></script>
+</body>
+</html>
