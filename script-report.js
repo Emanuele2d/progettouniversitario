@@ -12,14 +12,14 @@ const emissioniData = {
     {
       label: 'Scope 2 (Location-based) (t CO2e)',
       data: [256.15, 260.70], // Dati Scope 2 Location-based
-      backgroundColor: 'rgba(54, 162, 235, 0.5)', // Colore diverso per Scope 2
+      backgroundColor: 'rgba(54, 162, 235, 0.5)', // Colore diverso per Scope 2 Location-based
       borderColor: 'rgba(54, 162, 235, 1)',
       borderWidth: 1,
     },
     {
       label: 'Scope 2 (Market-based) (t CO2e)',
       data: [1.64, 1.33], // Dati Scope 2 Market-based
-      backgroundColor: 'rgba(255, 206, 86, 0.5)', // Colore diverso per Scope 2
+      backgroundColor: 'rgba(255, 206, 86, 0.5)', // Colore diverso per Scope 2 Market-based
       borderColor: 'rgba(255, 206, 86, 1)',
       borderWidth: 1,
     },
@@ -160,7 +160,7 @@ const observer = new IntersectionObserver((entries) => {
   threshold: 0.5
 });
 
-// Osserva i canvas
+// Questo codice JavaScript ottimizza il sito web monitorando la visibilità dei grafici e fornendo una funzionalità di menu a comparsa per una migliore navigazione su dispositivi mobili.
 observer.observe(document.getElementById('emissioniChart'));
 observer.observe(document.getElementById('energiaChart'));
 observer.observe(document.getElementById('diversitaChart'));
