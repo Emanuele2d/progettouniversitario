@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+  // Questo codice JavaScript ha la funzione di gestire l'apertura e la chiusura del menu "hamburger" per i dispositivi mobili, facendo apparire o scomparire il menu a comparsa in risposta al click sul relativo pulsante
 const hamburgerBtn = document.getElementById('hamburger-btn');
 const mainNav = document.getElementById('main-nav');
 
