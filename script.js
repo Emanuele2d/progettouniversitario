@@ -20,13 +20,13 @@ tabs.forEach(tab => {
   });
 });
 
-// Imposta la prima scheda come attiva all'avvio
+// Imposta la prima scheda come attiva all'avvio 
 document.addEventListener('DOMContentLoaded', () => {
   const firstTab = document.querySelector('.tab');
   if (firstTab) {
     firstTab.click();
   }
-    // Nascondi tutte le card tranne quelle della prima scheda all'avvio
+    // Nascondi tutte le card tranne quelle della prima scheda all'avvio per evitare problemi di visualizzazione
     const activeYear = firstTab.dataset.year;
     cards.forEach(card => {
       if (card.dataset.year !== activeYear) {
@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-  // Questo codice JavaScript ha la funzione di gestire l'apertura e la chiusura del menu "hamburger" per i dispositivi mobili, facendo apparire o scomparire il menu a comparsa in risposta al click sul relativo pulsante
 const hamburgerBtn = document.getElementById('hamburger-btn');
 const mainNav = document.getElementById('main-nav');
 
